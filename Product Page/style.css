@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  width:100%;
+  min-height: 100vh;
+  background: #E980FC;
+  display: grid;
+  place-content: center;
+}
+.product{
+  /* width: 90%; */
+  /* border: 2px solid red; */
+  max-width:750px;
+  /* width: clamp(21.25rem, 6.2986rem + 66.4506vw, 46.875rem); */
+  display: flex;
+  margin: 20px;
+
+}
+
+.image-gallery{
+  flex-basis: 47%;  
+  background: #241e20;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+  position: relative;
+
+}
+.image-gallery img{
+  width: 100%;
+  padding-top:90px;
+}
+.prdct-dtls{
+  flex-basis:53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 60px;
+  box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+.prdct-dtls h1{
+  color: #333;
+  font-size: 30px;
+}
+.prdct-dtls h2{
+  color: #555;
+  font-size: 30px;
+  font-weight: 600;
+}
+.prdct-dtls h3{
+  color:#00d874;
+  margin-bottom: 20px;
+}
+.prdct-dtls form{
+  font-size: 15px;
+  font-weight: 400;
+}
+.size-select{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.size-select p{
+  width: 70px;
+}
+.size-select input:checked + span{
+  color: blue;
+  font-weight: 600;
+}
+.size-select input{
+  display: none;
+}
+.size-select span{
+  cursor: pointer;
+  margin-right:15px;  
+
+}
+.color-select{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.color-select p{
+  width: 70px;
+}
+.color-select span{
+  display: inline-block;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.color-1{
+  background: red;
+
+}
+.color-2{
+  background:green ;
+  
+}
+.color-3{
+  background: blueviolet;
+  
+}
+.color-4{
+  background:pink;
+  
+} 
+.color-select input{
+  display: none;
+}
+.color-select input:checked + span{
+  transform: scale(0.7);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+
+}
+.quantity-select{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.quantity-select p{
+  width: 75px;
+}
+.quantity-select input{
+  background: #eee;
+  outline: 0;
+  border: 0;
+  padding: 2px 2px 2px 2px;
+  width: 50px;
+  border: 12px;
+}
+form button{
+  margin-top: 40px;
+  cursor: pointer;
+  width: 100%;
+  background: #553ff0;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+  border-radius: 30px;
+}
+form button:hover{
+  background: rgb(84, 64, 240,0.7);
+
+}
+.controls{
+  position: absolute;
+  top: 40px;
+  right: 20px;
+
+}
+.btn{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius:50%;
+  background:rgba(255,255, 255  , 0.5) ;
+  margin: 10px;
+  cursor: pointer;
+}
+.btn.active{
+  background: #553ff0;
+
+}
+@media screen and (max-width:700px) {
+  .product{
+   flex-direction: column;
+   min-width:320px ;
+  }
+  .image-gallery{
+    max-height:400px ;
+    display: grid;
+    justify-content: center;
+    vertical-align: center;
+   transform: scale(1);
+
+
+  }
+  .image-gallery img{
+   padding-top: 10px;
+  width: calc(100% - 100px);
+  height: calc(100% );
+  }
+  
+}

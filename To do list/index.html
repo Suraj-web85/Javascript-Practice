@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  </meta>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </meta>
+
+  <link rel="stylesheet" href="toDo.css">
+  </link>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </link>
+
+  <title>To-do-list</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="to-do-app">
+      <h2>
+        To-Do List
+
+        <img src="./images/book.png" alt="">
+      </h2>
+
+      <div class="input-text">
+        <input type="text" placeholder="Add your text" id="myText"></input>
+
+        <button onclick="addTask()" class="mybtn">Add</button>
+
+        <i class="mybtn" onclick="addTask()"></i>
+      </div>
+
+      <ul id="list-container"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
