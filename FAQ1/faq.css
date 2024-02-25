@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container{
+  padding: 10px;
+  width: 100%;
+  min-height:100vh ;
+  background:url('img/bg.webp') no-repeat center  center/cover;
+  display: grid;
+  place-content: center;
+}
+.container .sub-con{
+  padding: 15px 20px;
+  /* width: 600px; */
+  width: 600px;
+  /* height: 300px; */
+  min-height:fit-content ;
+  background: white;
+  border-radius: 12px;
+  border: none;
+}
+.main-heading{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.quest-div, .questions-answers hr{
+  margin-bottom: 10px;
+}
+.ans-wers{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 15px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.35s ease,max-height 0.35s ease;
+ 
+}
+.quest-div{
+  display: flex;
+  justify-content: space-between;
+
+}
+.quest-div span{
+  font-size: 1.2rem;
+  cursor:pointer;
+
+}
+.ans-wers.active{
+  opacity: 1;
+  max-height: 200px;
+  
+
+}

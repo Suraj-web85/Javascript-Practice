@@ -47,6 +47,11 @@ document.querySelector('#mans').addEventListener('click',function(e){
   console.log(e.target.getAttribute('id') + " is clicked")
 
   const com = e.target
+  console.log(com);
+  // if(com.hasAttribute('id','irons-man')){
+  //   console.log('it means mans is clicked')
+  // }
+  // console.log(com.hasAttribute('id','iron-man'));
   if(com.matches('li')){
     com.style.backgroundColor = 'blue';
   }
@@ -58,8 +63,12 @@ document.querySelector('#mans').addEventListener('click',function(e){
 
 const ul = document.getElementsByClassName('sub-con')[0];
 const li = document.createElement('li');
+const liTwo = document.createElement('li');
 
 li.innerText= "Hulk";
 li.setAttribute('id','hulk');
 ul.appendChild(li);
 
+liTwo.innerText = "Power Man"
+liTwo.setAttribute('li','power')
+ul.appendChild(liTwo);
