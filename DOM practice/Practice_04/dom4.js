@@ -10,7 +10,7 @@ document.addEventListener('click',function(){
 },false);
 
 document.querySelector('.second-div').addEventListener( 'click', function(e){
-  // e.stopPropagation();
+  e.stopPropagation();
   console.log('second-div')
 },{once:true});
 

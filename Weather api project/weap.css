@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(143deg, #081118 ,#252e5b);
+  color: white;
+
+}
+.container{
+  z-index: 111;
+  width: 80vmin;
+  height: max-content;
+  padding: 30px;
+  position: relative; 
+  backdrop-filter: blur(30px); /* Apply blur effect */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.4) ,
+  -6px -6px 20px rgba(255, 255, 255, 0.4);
+}
+.search-sec{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom:20px ;
+  
+}
+.text{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgba(222, 222, 222, 0.914);
+  width: 70%;
+  color: white;
+  background-color: transparent;
+  padding-bottom:5px ;
+}
+.text:focus{
+  border-color: white;
+}
+#btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 9px 18px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.fet-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.city-name{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.img-con{
+  width: 4rem;
+  
+}
+.icon,.deg{
+  font-size: 3.5rem;
+} 
+.deg{
+  font-weight: 500;
+}
+.min-max{
+  display: flex;
+  gap: 10px;
+  font-weight: 500;
+}
+.min{
+  border-right: 2px solid rgb(255, 255, 255 , 0.5);
+  padding-right: 10px;
+}
+.min , .max{
+  text-align: center;
+}
+.fa-solid{
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  display: none !important;
+}
+.container::before, .container::after {
+  content: '';
+  position: absolute;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: -1; 
+}
+.container::before{
+  top: 80%;
+  right: -4rem;
+}
+.container::after {
+  bottom:80%;
+  left: -4rem;
+}
+@media screen and (max-width :400px) {
+  .fa-solid{
+    display: block !important;
+  }
+  #btn{
+    display: none;
+  }
+  
+}

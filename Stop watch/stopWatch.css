@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background:url('img/bg.avif') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.container{
+  
+  width: 750px;
+  min-width: max-content;
+  height: 250px;
+  background:url('./img/bg.avif') no-repeat center center/cover;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.834);
+  padding: 40px 30px;
+  color: white;
+}
+#timer{
+  /* width: 100%; */
+  font-size: clamp(1.875rem, 1.3603rem + 3.2941vw, 4.5rem);
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  overflow-wrap: hidden;
+  /* padding:35px ; */
+}
+.buttons{
+
+  text-align: center;
+}
+button{
+  /* margin: 0 10px; */
+  height: 50px;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+button i{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 1.5rem;
+
+  color: white;
+}
+#startStopBtn{
+  background-color: blueviolet;
+}
+#resetBtn{
+  background-color: burlywood;
+}
+
+
+#play{
+ /* background-color: green; */
+}
+#stop{
+  /* background-color: red; */
+
+}
+#reset{
+  /* background-color: yellowgreen; */
+  
+}
